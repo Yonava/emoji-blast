@@ -263,6 +263,22 @@ importers:
         specifier: ^0.28.7
         version: 0.28.15(typescript@5.9.3)
 
+  packages/konami-emoji-blast-vue:
+    dependencies:
+      konami-emoji-blast:
+        specifier: 'workspace:'
+        version: link:../konami-emoji-blast
+      vue:
+        specifier: ^3.0.0
+        version: 3.5.26(typescript@5.9.3)
+    devDependencies:
+      '@vitejs/plugin-vue':
+        specifier: ^6.0.3
+        version: 6.0.3(vite@7.3.0(@types/node@25.0.3)(jiti@2.6.1)(terser@5.44.1)(yaml@2.8.2))(vue@3.5.26(typescript@5.9.3))
+      jsdom:
+        specifier: ^27.0.0
+        version: 27.3.0(postcss@8.5.6)
+
 packages:
 
   '@acemir/cssom@0.9.29':
@@ -7145,6 +7161,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
