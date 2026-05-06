@@ -1,15 +1,19 @@
 import { initializeKonamiEmojiBlast } from "konami-emoji-blast";
-import { onMounted } from "vue";
-// import { useEffect } from "react";
+import { onBeforeUnmount, onMounted } from "vue";
 
-// export const useKonamiEmojiBlast = (onActivate?: () => void) => {
-// 	useEffect(() => {
-// 		return initializeKonamiEmojiBlast(onActivate);
-// 	}, [onActivate]);
-// };
-
+/**
+ * @returns Function that stops emojis when called.
+ */
 export const useKonamiEmojiBlast = (onActivate?: () => void) => {
+	let stop = () => {
+		/* empty */
+	};
+
 	onMounted(() => {
-		return initializeKonamiEmojiBlast(onActivate);
+		stop = initializeKonamiEmojiBlast(onActivate);
 	});
+
+	onBeforeUnmount(stop);
+
+	return stop;
 };

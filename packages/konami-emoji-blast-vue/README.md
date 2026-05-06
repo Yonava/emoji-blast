@@ -1,7 +1,7 @@
 <h1 align="center">@konami-emoji-blast/vue</h1>
 
 <p align="center">
-  Integration for <a href="https://github.com/JoshuaKGoldberg/emoji-blast/packages/konami-emoji-blast">konami-emoji-blast</a> in <a href="https://vuejs.org/">Vue</a>.
+  Integration for <a href="https://github.com/JoshuaKGoldberg/emoji-blast/packages/konami-emoji-blast">konami-emoji-blast</a> in <a href="https://vuejs.org/">Vue</a>. 🟢
 </p>
 
 <p align="center">
